@@ -1,0 +1,23 @@
+
+:root{
+    --size-10: 10px;
+    --size-20: 20px;
+    --size-30: 30px;
+    --size-40: 40px;
+    --size-50: 50px;
+    --size-60: 60px;
+    --size-70: 70px;
+    --size-80: 80px;
+    --size-90: 90px;
+
+    --clr-gold: 'red';
+
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1{
+    padding: var(--size-90) 0;
+}

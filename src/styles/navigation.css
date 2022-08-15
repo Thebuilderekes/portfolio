@@ -1,0 +1,39 @@
+
+:root{
+
+    --size-10: 10px;
+    --size-20: 20px;
+    --size-30: 30px;
+    --size-40: 40px;
+    --size-50: 50px;
+
+    --clr-gold: 'red';
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    justify-content:flex-end;
+    background-color:cornflowerblue;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-20) 0;
+    
+  }
+  
+  nav ul li {
+    padding: 0 10px;
+  } 
+
+  nav ul li a {
+    color: hsl(240, 3%, 6%);
+  }
