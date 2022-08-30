@@ -1,0 +1,60 @@
+import React from 'react'
+import styled from 'styled-components'
+
+
+function About() {
+  return (
+
+    <div>
+        <Section>
+          <div className="container">
+                <div className="row">
+                     <div className="  col-sm-12 col-md-6">
+                            <h2 className= "text-left">About</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vero, esse autem vel mollitia, quae ex natus veniam dolores itaque corrupti! Corporis, laudantium deleniti molestias delectus dolor quod maiores nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum non quidem dolor commodi nobis asperiores eum velit veritatis magni necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptates nesciunt earum in temporibus sapiente nemo, dicta at error blanditiis ad fugit necessitatibus corrupti nam est neque iusto ratione accusantium!</p>
+                    </div>
+                    <div className="about-img-container col-md-6 col-sm-12 position-relative">
+                         <img  className= "position-absolute" src="/src/assets/img/ekeopre.jpg"alt="" />
+                    </div>
+              </div>
+            </div>
+       </Section>
+    </div>
+  )
+}
+
+export default About
+
+const Section = styled.section`
+width: 100vw;
+background-color: #703D85;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3rem 0;
+
+
+
+h2{
+color: #E8D1FF;
+  overflow-y: hidden;
+
+}
+
+p{
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+img {
+  max-width: 300px;
+  height: 300px;
+  right: 0;
+}
+
+`
+
