@@ -1,20 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 import '../../styles/navigation.css'
 
 
 function Navigation(){
     return (
         <Header>
-          <a className= "logo" href="/">EB</a>
+                <Fade top>
+                    <a className= "logo" href="/">EB</a>
+               </Fade>
                 <nav>
+                    <Fade top>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Porfolio</a></li>
                         <li><a href="">Contact</a></li>
-                    </ul>    
-                </nav>
+                    </ul> 
+                    </Fade>   
+                    </nav>
         </Header>
 
     )

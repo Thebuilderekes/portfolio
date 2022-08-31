@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Fade from 'react-reveal/Fade'
 
 function Portfolio() {
   return (
@@ -10,36 +10,84 @@ function Portfolio() {
           <div className="container">
                 <div className="row">
                      <div className="col-12 m-auto">
+                         <Fade>
                             <h2 className= "text-left">Portfolio</h2>
+                            </Fade>
                             <div className="card-container">
-                                  <div className="card "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                    </p> 
-                                  <ul>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Bootstrap</li>
-                                        </ul></div>
-                                  <div className="card ">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.</p>  
-                                    <ul>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Bootstrap</li>
-                                    </ul></div>
-                             </div>
+                                <Fade>
+                                    <div className="card col col-12 col-sm-12 col-md-12">
+                                            <img src="https://via.placeholder.com/80" alt="" />
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                            </p> 
+                                            <ul>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                    </Fade>
+                                    <Fade>
+                                          <div className="card col col-12 col-sm-12 col-md-12">
+                                                 <img src="https://via.placeholder.com/80" alt="" />
+                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                                  </p> 
+                                                  <ul>
+                                                      <li>CSS</li>
+                                                      <li>JavaScript</li>
+                                                      <li>Bootstrap</li>
+                                              </ul>
+                                          </div>
+                                    </Fade>
+                                    <Fade>
+                                            <div className="card col col-12 col-sm-12 col-md-12">
+                                                   <img src="https://via.placeholder.com/80" alt="" />
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                                    </p> 
+                                                    <ul>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                      </Fade>
+                           </div>
                              <div className="card-container">
-                                      <div className="card col col-12 col-sm-12 col-md-5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.</p>
-                                       <ul>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Bootstrap</li>
-                                        </ul></div>
-                                      <div className="card col col-12 col-sm-12 col-md-5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.</p> 
-                                      <ul>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Bootstrap</li>
-                                        </ul></div>
+                                    <Fade>
+                                            <div className="card col col-12 col-sm-12 col-md-12">
+                                                    <img src="https://via.placeholder.com/80" alt="" />
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                                    </p> 
+                                                    <ul>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                      </Fade>
+                                      <Fade>
+                                            <div className="card col col-12 col-sm-12 col-md-12">
+                                                   <img src="https://via.placeholder.com/80" alt="" />
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                                    </p> 
+                                                    <ul>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                      </Fade>
+                                      <Fade>
+                                            <div className="card col col-12 col-sm-12 col-md-12">
+                                                   <img src="https://via.placeholder.com/80" alt="" />
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
+                                                    </p> 
+                                                    <ul>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                      </Fade>
                              </div>
                      </div>
                 </div>
@@ -58,7 +106,6 @@ align-items: center;
 padding: 3rem 0;
 text-decoration: none;
 list-syle: none;
-
 
 
 h2{
@@ -90,7 +137,7 @@ p{
 
 .card-container{
   display: flex;
-  margin: 30px 0;
+  margin: 50px 0;
  justify-content: space-between;
 }
 
@@ -98,19 +145,20 @@ p{
 
 .card { 
   border: 1px solid #703D85;
-  width: 45%;
-
+  width: 30%;
   padding: 20px;
 
 }
 
-@media (max-width:400px){
+@media (max-width:990px){
 
   .card-container {
     flex-direction: column;
+    margin: 20px 0;
   }
   
   .card{
+    margin: 30px 0;
     width: 100%;
   }
   }
