@@ -24,8 +24,19 @@ export default Herosection
 
 const Section = styled.div`
 
-background-color: "#000000";
 height: 100vh;
+
+@media (min-width:1500px){
+
+      height: 60vh;
+
+}
+
+@media (max-width:900px){
+
+      height: 60vh;
+
+}
 
 h1.react-reveal{
       overflow: hidden;

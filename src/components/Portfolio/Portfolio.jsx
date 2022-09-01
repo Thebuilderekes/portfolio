@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
+import PortfolioCard from './PortfolioCard'
 
 function Portfolio() {
   return (
@@ -11,83 +12,43 @@ function Portfolio() {
                 <div className="row">
                      <div className="col-12 m-auto">
                          <Fade>
-                            <h2 className= "text-left">Portfolio</h2>
-                            </Fade>
-                            <div className="card-container">
-                                <Fade>
-                                    <div className="card col col-12 col-sm-12 col-md-12">
-                                            <img src="https://via.placeholder.com/80" alt="" />
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                            </p> 
-                                            <ul>
-                                                <li>CSS</li>
-                                                <li>JavaScript</li>
-                                                <li>Bootstrap</li>
-                                        </ul>
-                                    </div>
-                                    </Fade>
-                                    <Fade>
-                                          <div className="card col col-12 col-sm-12 col-md-12">
-                                                 <img src="https://via.placeholder.com/80" alt="" />
-                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                                  </p> 
-                                                  <ul>
-                                                      <li>CSS</li>
-                                                      <li>JavaScript</li>
-                                                      <li>Bootstrap</li>
-                                              </ul>
-                                          </div>
-                                    </Fade>
-                                    <Fade>
-                                            <div className="card col col-12 col-sm-12 col-md-12">
-                                                   <img src="https://via.placeholder.com/80" alt="" />
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                                    </p> 
-                                                    <ul>
-                                                        <li>CSS</li>
-                                                        <li>JavaScript</li>
-                                                        <li>Bootstrap</li>
-                                                </ul>
-                                            </div>
-                                      </Fade>
+                                <h2 className= "text-left">Portfolio</h2>
+                          </Fade>
+                          <div className="card-container">
+                                  <PortfolioCard imgUrl = "https://via.placeholder.com/300"  
+                                    text = "This is about my project..." 
+                                    layout = " CSS" 
+                                    tech=" Bootstrap"
+                                    language= "React" /> 
+                                  <PortfolioCard 
+                                    imgUrl = "https://via.placeholder.com/300" 
+                                    text = "This is about my project..." 
+                                    layout = " CSS"  tech=" Bootstrap" 
+                                    language= "JavaScript" /> 
+                                  <PortfolioCard
+                                    imgUrl = "https://via.placeholder.com/300" 
+                                    text = "This is about my project..." 
+                                    layout = " CSS"  
+                                    tech=" Bootstrap" 
+                                    language= "JavaScript"/>          
                            </div>
-                             <div className="card-container">
-                                    <Fade>
-                                            <div className="card col col-12 col-sm-12 col-md-12">
-                                                    <img src="https://via.placeholder.com/80" alt="" />
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                                    </p> 
-                                                    <ul>
-                                                        <li>CSS</li>
-                                                        <li>JavaScript</li>
-                                                        <li>Bootstrap</li>
-                                                </ul>
-                                            </div>
-                                      </Fade>
-                                      <Fade>
-                                            <div className="card col col-12 col-sm-12 col-md-12">
-                                                   <img src="https://via.placeholder.com/80" alt="" />
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                                    </p> 
-                                                    <ul>
-                                                        <li>CSS</li>
-                                                        <li>JavaScript</li>
-                                                        <li>Bootstrap</li>
-                                                </ul>
-                                            </div>
-                                      </Fade>
-                                      <Fade>
-                                            <div className="card col col-12 col-sm-12 col-md-12">
-                                                   <img src="https://via.placeholder.com/80" alt="" />
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellat eos reiciendis odio ipsa odit, autem dicta distinctio neque perspiciatis ea aliquam corporis labore esse quisquam? Illum incidunt suscipit voluptates.
-                                                    </p> 
-                                                    <ul>
-                                                        <li>CSS</li>
-                                                        <li>JavaScript</li>
-                                                        <li>Bootstrap</li>
-                                                </ul>
-                                            </div>
-                                      </Fade>
+                           <div className="card-container">
+                           <PortfolioCard 
+                                    imgUrl = "https://via.placeholder.com/300" 
+                                    text = "This is about my project..." 
+                                    layout = " CSS"  tech=" Bootstrap" 
+                                    language= "JavaScript" /> 
+                                  <PortfolioCard
+                                    imgUrl = "https://via.placeholder.com/300" 
+                                    text = "This is about my project..." 
+                                    layout = " CSS"  
+                                    tech=" Bootstrap" 
+                                    language= "JavaScript"/>        
+                                        <PortfolioCard 
+                                    imgUrl = "https://via.placeholder.com/300" 
+                                    text = "This is about my project..." 
+                                    layout = " CSS"  tech=" Bootstrap" 
+                                    language= "JavaScript" />     
                              </div>
                      </div>
                 </div>
@@ -145,7 +106,6 @@ p{
 
 .card { 
   border: 1px solid #703D85;
-  width: 30%;
   padding: 20px;
 
 }

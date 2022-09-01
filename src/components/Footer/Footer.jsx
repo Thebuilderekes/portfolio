@@ -16,7 +16,7 @@ function Footer() {
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
                 </div>
-                <button type="submit" class="btn btn-primary">Send email</button>
+                <button type="submit" class="btn">Send email</button>
         </form>
 
         <div className="social">    
@@ -50,7 +50,9 @@ form, label, input {
 form {
 
     .btn {
+        background-color: #703D85 ;
         margin-top: 10px;
+        color: #ffffff;
     }
 }
 
