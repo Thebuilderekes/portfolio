@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../index.css'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
 import PortfolioCard from './PortfolioCard'
@@ -7,47 +8,47 @@ function Portfolio() {
   return (
 
     <div>
-        <Section>
+        <Section id = "#portfolio">
           <div className="container">
                 <div className="row">
-                     <div className="col-12 m-auto">
+                     <div className="col-12 m-auto" name= "portfolio">
                          <Fade>
                                 <h2 className= "text-left">Portfolio</h2>
                           </Fade>
                           <div className="card-container">
                                   <PortfolioCard imgUrl = "https://via.placeholder.com/300"  
                                     text = "This is about my project..." 
-                                    layout = " CSS" 
-                                    tech=" Bootstrap"
+                                    styling = " CSS" 
+                                    framework=" Bootstrap"
                                     language= "React" /> 
                                   <PortfolioCard 
                                     imgUrl = "https://via.placeholder.com/300" 
                                     text = "This is about my project..." 
-                                    layout = " CSS"  tech=" Bootstrap" 
+                                    styling = " CSS"  framework=" Bootstrap" 
                                     language= "JavaScript" /> 
                                   <PortfolioCard
                                     imgUrl = "https://via.placeholder.com/300" 
                                     text = "This is about my project..." 
-                                    layout = " CSS"  
-                                    tech=" Bootstrap" 
+                                    styling = " CSS"  
+                                    framework=" Bootstrap" 
                                     language= "JavaScript"/>          
                            </div>
                            <div className="card-container">
                            <PortfolioCard 
                                     imgUrl = "https://via.placeholder.com/300" 
                                     text = "This is about my project..." 
-                                    layout = " CSS"  tech=" Bootstrap" 
+                                    styling = " CSS"  framework=" Bootstrap" 
                                     language= "JavaScript" /> 
                                   <PortfolioCard
                                     imgUrl = "https://via.placeholder.com/300" 
                                     text = "This is about my project..." 
-                                    layout = " CSS"  
-                                    tech=" Bootstrap" 
+                                    styling = " CSS"  
+                                    framework=" Bootstrap" 
                                     language= "JavaScript"/>        
                                         <PortfolioCard 
                                     imgUrl = "https://via.placeholder.com/300" 
                                     text = "This is about my project..." 
-                                    layout = " CSS"  tech=" Bootstrap" 
+                                    styling = " CSS"  framework=" Bootstrap" 
                                     language= "JavaScript" />     
                              </div>
                      </div>
@@ -67,6 +68,11 @@ align-items: center;
 padding: 3rem 0;
 text-decoration: none;
 list-syle: none;
+
+@media (min-width:1500px){
+
+  padding: 7rem 0;
+}
 
 
 h2{

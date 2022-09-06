@@ -11,7 +11,7 @@ function About() {
           <div className="container">
                 <div className="row">
                   <Fade>
-                     <div className="  col-sm-12 col-md-6">
+                     <div className="  col-sm-12 col-md-6" name = "about">
                             <h2 className= "text-left">About</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vero, esse autem vel mollitia, quae ex natus veniam dolores itaque corrupti! Corporis, laudantium deleniti molestias delectus dolor quod maiores nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum non quidem dolor commodi nobis asperiores eum velit veritatis magni necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptates nesciunt earum in temporibus sapiente nemo, dicta at error blanditiis ad fugit necessitatibus corrupti nam est neque iusto ratione accusantium!</p>
                     </div>
@@ -38,6 +38,10 @@ flex-direction: column;
 align-items: center;
 padding: 3rem 0;
 
+@media (min-width:1500px){
+
+  padding: 7rem 0;
+}
 
 
 h2{
@@ -60,6 +64,9 @@ img {
   height: 300px;
   right: 0;
 }
+
+
+
 
 `
 

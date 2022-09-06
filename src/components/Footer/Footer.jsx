@@ -5,18 +5,19 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Footer() {
   return (
-    <div className='container'>
-        <Section>
+    <Section>
+        <footer>
+   <div className='container'>
            <form>
-                <div class="form-group">
+                <div className="form-group">
                         <label for="exampleInputEmail1">Email </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                 </div>
-                <button type="submit" class="btn">Send email</button>
+                <button type="submit" className="btn">Send email</button>
         </form>
 
         <div className="social">    
@@ -26,20 +27,34 @@ function Footer() {
              <a href=""><i className="bi bi-facebook" style={{ fontSize: 50,  color:" #703D85"}}></i></a></div>
          
         </div>
-        </Section>
-</div>
+     </div>
+</footer>
+</Section>
   )
 }
 
 export default Footer
 
 const Section = styled.div`
+background-color:#efefef;
 
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 20%;
-grid-row-gap: 0px;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20%;
+    grid-row-gap: 0px;
+
+
+    @media (max-width: 500px) {
+        display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2, 1fr);
+       grid-column-gap: 0px;
+       grid-row-gap: 0px;
+           
+}
 
 form, label, input {
     
@@ -82,13 +97,14 @@ input.form-control{
     }
 }
 
-@media (max-width: 500px) {
- display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-    
+@media (min-width:1500px){
+
+    padding: 7rem 0;
+  }
+
+
+
+
 
 .social {
 

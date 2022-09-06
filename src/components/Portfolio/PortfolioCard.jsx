@@ -1,23 +1,23 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 
-const PortfolioCard = ({imgUrl, text, layout, language, tech}) => {
+const PortfolioCard = ({imgUrl, text, styling, language, framework}) => {
   return (
 
-    <div>
+    <section>
     <Fade>
     <div className="card col col-12 col-sm-12 col-md-12">
             <img src={imgUrl} alt="" />
             <p>{text}
             </p> 
             <ul>
-                <li>{layout}</li>
+                <li>{styling}</li>
                 <li>{language}</li>
-                <li>{tech}</li>
+                <li>{framework}</li>
         </ul>
     </div>
     </Fade>
-    </div>
+    </section>
   )
 }
 
