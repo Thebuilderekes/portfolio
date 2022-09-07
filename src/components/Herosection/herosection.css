@@ -30,7 +30,7 @@
 h1{
     padding: var(--size-140) 0;
     font-family: 'Archivo Black';
-    color: #4b4a4a;
+    color: #fff8f8;
     line-height: 1.6;
 }
 
@@ -43,8 +43,8 @@ h1 .small-text {
 
 }
 
-h1 .purple-text {
-    color: #860cb6;
+h1 .gray-text {
+    color: #E8D1FF;
     font-family: inherit;
     font-weight: 600;
 }

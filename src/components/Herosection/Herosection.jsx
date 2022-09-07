@@ -6,23 +6,27 @@ import Fade from 'react-reveal/Fade'
 
 function Herosection() {
   return (
-      <div className="container">
-       <Fade>
             <Section>
+            <div className="container">
                   <div className="row">
                         <div className="col-12">
-                                    <h1><span className = "small-text">Hi, my name is</span> <br /> ANGELA BRIDAR<br/>  Front End <span className='purple-text'>Developer</span></h1>
+                        <Fade>
+                                    <h1><span className = "small-text">Hi, my name is</span> <br /> ANGELA BRIDAR<br/>  Front End <span className='gray-text'>Developer</span></h1>
+                         </Fade>
                         </div>
                </div>
+            </div>
          </Section>
-      </Fade>
-  </div>
+
+
   )
 }
 
 export default Herosection
 
 const Section = styled.div`
+background-color: #262b33;
+padding: 0 1rem;
 height: 100vh;
 
 h1.react-reveal{
@@ -31,7 +35,7 @@ h1.react-reveal{
 
 
 @media (min-width:1500px){
-     padding-top: 15%;
+     padding-top: 10%;
       height: 90vh;
 
       h1 {
@@ -41,12 +45,12 @@ h1.react-reveal{
 }
 
 @media (min-width:1000px){
-      padding-top: 10%;
+      padding-top: 5%;
 }
 
 @media (max-width:900px){
-
-      height: 60vh;
+      padding-top: 15%;
+      height: 80vh;
 
 }
 

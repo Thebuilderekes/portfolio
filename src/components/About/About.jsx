@@ -32,11 +32,11 @@ export default About
 
 const Section = styled.section`
 width: 100vw;
-background-color: #703D85;
+background-color:  #262b33;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 3rem 0;
+padding: 3rem 1rem;
 
 @media (min-width:1500px){
 

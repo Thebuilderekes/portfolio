@@ -2,6 +2,7 @@ import React from 'react'
 import '../../index.css'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
+
 import PortfolioCard from './PortfolioCard'
 
 function Portfolio() {
@@ -65,9 +66,11 @@ const Section = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 3rem 0;
+padding: 3rem 1rem;
 text-decoration: none;
 list-syle: none;
+background-color:  #262b33;
+
 
 @media (min-width:1500px){
 
@@ -76,7 +79,7 @@ list-syle: none;
 
 
 h2{
-
+  color: #E8D1FF;
   overflow-y: hidden;
 
 }

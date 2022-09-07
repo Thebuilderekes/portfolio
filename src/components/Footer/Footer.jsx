@@ -5,30 +5,34 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Footer() {
   return (
-    <Section>
-        <footer>
-   <div className='container'>
-           <form>
-                <div className="form-group">
-                        <label for="exampleInputEmail1">Email </label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-                </div>
-                <div className="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
-                </div>
-                <button type="submit" className="btn">Send email</button>
-        </form>
+    <Section name= "footer">
+            <footer>
+                <div className='container'>
+                    <form>
+                            <div className="form-group">
+                                    <label for="exampleInputEmail1">Email </label>
+                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                            </div>
+                            <div className="form-group">
+                                <label for="exampleInputText">Message</label>
+                                <textarea type="text" className="form-control" id="exampleInputText" placeholder="Enter message"/>
+                            </div>
+                            <button type="submit" className="btn">Send email</button>
+                    </form>
 
-        <div className="social">    
-            <p>You can reach me on social media</p>       
-            <div className="social-icons">    <a href=""><i className="bi bi-facebook" style={{ fontSize: 50 , color:"#703D85"}}></i></a>
-             <a href=""><i className="bi bi-twitter" style={{ fontSize: 50, color:" #703D85" }}></i></a>
-             <a href=""><i className="bi bi-facebook" style={{ fontSize: 50,  color:" #703D85"}}></i></a></div>
-         
-        </div>
-     </div>
-</footer>
+                    <div className="social">    
+                        <p>You can reach me on social media</p>       
+                        <div className="social-icons"> 
+                                <a href=""><i className="bi bi-facebook" style={{ fontSize: 50 , color:"#E8D1FF"}}></i>
+                                </a>
+                                <a href=""><i className="bi bi-twitter" style={{ fontSize: 50, color:"#E8D1FF" }}></i>
+                                </a>
+                                <a href=""><i className="bi bi-facebook" style={{ fontSize: 50,  color:" #E8D1FF"}}></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
 </Section>
   )
 }
@@ -36,8 +40,8 @@ function Footer() {
 export default Footer
 
 const Section = styled.div`
-background-color:#efefef;
-
+background-color: #262b33;
+padding: 1rem 1rem;
 
 .container {
     display: grid;
@@ -49,25 +53,30 @@ background-color:#efefef;
 
     @media (max-width: 500px) {
         display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: repeat(2, 1fr);
-       grid-column-gap: 0px;
-       grid-row-gap: 0px;
-           
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;         
 }
 
-form, label, input {
-    
-    font-family:Arial, Helvetica, sans-serif;
+form, label, input, {
+    font-family:Arial, Helvetica, sans-serif; 
 }
 
+label, p {
+    color: #E8D1FF;
+}
+
+label{
+    font-size: 1.2rem;
+}
 
 form {
-
     .btn {
-        background-color: #703D85 ;
+        background-color: transparent;
+        border: 1px solid #E8D1FF;
         margin-top: 10px;
-        color: #ffffff;
+        color:  #E8D1FF;;
     }
 }
 
@@ -101,10 +110,6 @@ input.form-control{
 
     padding: 7rem 0;
   }
-
-
-
-
 
 .social {
 
