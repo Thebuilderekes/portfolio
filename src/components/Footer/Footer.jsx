@@ -4,9 +4,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 function Footer() {
+
+const iconStyle = {fontSize: 50 , color:"#E8D1FF"}
+
   return (
     <Section name= "footer">
             <footer>
+                <p> Get in touch</p>
                 <div className='container'>
                     <form>
                             <div className="form-group">
@@ -23,12 +27,13 @@ function Footer() {
                     <div className="social">    
                         <p>You can reach me on social media</p>       
                         <div className="social-icons"> 
-                                <a href=""><i className="bi bi-facebook" style={{ fontSize: 50 , color:"#E8D1FF"}}></i>
+                                <a href=""><i className="bi bi-facebook" style={iconStyle}></i>
                                 </a>
-                                <a href=""><i className="bi bi-twitter" style={{ fontSize: 50, color:"#E8D1FF" }}></i>
+                                <a href=""><i className="bi bi-youtube" style={iconStyle}></i>
                                 </a>
-                                <a href=""><i className="bi bi-facebook" style={{ fontSize: 50,  color:" #E8D1FF"}}></i>
+                                <a href=""><i className="bi bi-twitter" style={iconStyle}></i>
                                 </a>
+                              
                         </div>
                     </div>
                 </div>
@@ -41,7 +46,19 @@ export default Footer
 
 const Section = styled.div`
 background-color: #262b33;
-padding: 1rem 1rem;
+padding: 0 1rem;
+
+footer {
+    
+    p {
+        color: #E8D1FF;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Archivo Black';
+
+    }
+}
+
 
 .container {
     display: grid;
@@ -65,6 +82,9 @@ form, label, input, {
 
 label, p {
     color: #E8D1FF;
+}
+label {
+    margin: 1rem 0;
 }
 
 label{
@@ -108,7 +128,7 @@ input.form-control{
 
 @media (min-width:1500px){
 
-    padding: 7rem 0;
+    padding: 2rem 0;
   }
 
 .social {

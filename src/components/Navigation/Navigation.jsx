@@ -111,10 +111,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 12rem;
+  padding: 1.2rem 8rem;
   font-family:Arial, Helvetica, sans-serif;
 
-@media (max-width: 400px){
+@media (max-width: 1200px){
 
   padding: 1rem 1rem;
 }
