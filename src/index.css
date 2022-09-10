@@ -1,19 +1,26 @@
-
 /* archivo-black-regular - latin */
 @font-face {
-  font-family: 'Archivo Black';
+  font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/archivo-black-v17-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./fonts/archivo-black-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/archivo-black-v17-latin/archivo-black-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/archivo-black-v17-latin/archivo-black-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/archivo-black-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/archivo-black-v17-latin-regular.svg#ArchivoBlack') format('svg'); /* Legacy iOS */
+  src: url("./fonts/archivo-black-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/archivo-black-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("./fonts/archivo-black-v17-latin/archivo-black-v17-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/archivo-black-v17-latin/archivo-black-v17-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/archivo-black-v17-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/archivo-black-v17-latin-regular.svg#ArchivoBlack")
+      format("svg"); /* Legacy iOS */
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,26 +29,23 @@
   overflow-x: hidden;
 }
 
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:  #262b33;
+  background-color: #262b33;
 }
 
 html {
-  scroll-padding-top: 400px;
+  scroll-padding-top: 100px;
 }
 
-
-
-a{
+a {
   text-decoration: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 

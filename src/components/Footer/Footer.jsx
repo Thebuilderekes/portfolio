@@ -1,17 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Fade from 'react-reveal/Fade'
+
 
 
 function Footer() {
 
-const iconStyle = {fontSize: 50 , color:"#E8D1FF"}
+const iconStyle = {fontSize: 40 , color:"#E8D1FF"}
 
   return (
     <Section name= "footer">
             <footer>
+                <Fade>
                 <p> Get in touch</p>
+                </Fade>
+                <Fade>
                 <div className='container'>
+            
                     <form>
                             <div className="form-group">
                                     <label for="exampleInputEmail1">Email </label>
@@ -37,6 +43,7 @@ const iconStyle = {fontSize: 50 , color:"#E8D1FF"}
                         </div>
                     </div>
                 </div>
+                </Fade>
         </footer>
 </Section>
   )
@@ -55,7 +62,7 @@ footer {
         font-size: 2rem;
         text-align: center;
         font-family: 'Archivo Black';
-
+        padding: 1.5rem 0;
     }
 }
 
@@ -84,7 +91,7 @@ label, p {
     color: #E8D1FF;
 }
 label {
-    margin: 1rem 0;
+    margin: 0.6rem 0;
 }
 
 label{
@@ -95,8 +102,13 @@ form {
     .btn {
         background-color: transparent;
         border: 1px solid #E8D1FF;
-        margin-top: 10px;
-        color:  #E8D1FF;;
+        margin: 1rem 0;
+        color:  #E8D1FF;
+
+        &:hover {
+            background-color: #E8D1FF;
+            color: #262b33;
+        }
     }
 }
 
@@ -113,16 +125,16 @@ input.form-control{
      align-items: center;
 
      .social-icons {
-        
+    
         a {
             padding: 0 10px;
         }
      }
 
- 
     p {
         font-size: 1.825rem;
         font-family:Arial, Helvetica, sans-serif;  
+   
     }
 }
 
@@ -137,7 +149,6 @@ input.form-control{
         font-size: 1.3rem;
     }
 }
-
 
 }
 

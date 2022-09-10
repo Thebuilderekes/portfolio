@@ -11,10 +11,14 @@ function Navigation() {
   
     const [navb, setNavb] = useState(true);
     const handleClick = () => setNavb(!navb) ;
+    const [click, setClick] = useState(true)
+    const handleMenu= () => setNavb(!navb)
     const iconStyle = {width: "30px" , height:"30px", color: "#ffffff", }
     const linkStyleDesktop = { color: "#ffffff", padding: "0 10px ", cursor: "pointer"}
     const linkStyleMobile = { color: "#ffffff", padding: "30px 0", fontSize: "1.5rem", cursor: "pointer"}
 
+
+   
 
 
      return (
@@ -23,7 +27,7 @@ function Navigation() {
               <a href="#">LOGO</a>
               <Nav className="desktop-nav">
                     <div className="desktop-navItems" >
-                          <Link  style = {linkStyleDesktop}   to="app" smooth={true}  duration={500}>
+                          <Link  style = {linkStyleDesktop}   to="/" smooth={true}  duration={500}>
                               Home
                          </Link>
                         <Link style = {linkStyleDesktop}  to="about" smooth={true}  duration={500}>
@@ -45,17 +49,17 @@ function Navigation() {
 
           <Nav className="mobile-nav">
             <Fade>
-                <div className={!navb ? 'display-mobile-nav' : 'display-none'} >
-                          <Link className= "link-padding"  style = {linkStyleMobile} to="app" smooth={true}  duration={500}>
-                              Home
+                <div className={!navb || !click ? 'display-mobile-nav' : 'display-none'} >
+                          <Link onClick={handleMenu}    style = {linkStyleMobile} to="app" smooth={true}  duration={500}>
+                           Home
                         </Link>
-                        <Link className= "link-padding"style = {linkStyleMobile}to="about" smooth={true}  duration={500}>
+                        <Link onClick={handleMenu}  style = {linkStyleMobile}to="about" smooth={true}  duration={500}>
                               About
                         </Link>
-                        <Link  className= "link-padding" style = {linkStyleMobile} to="portfolio" smooth={true}  duration={500}>
+                        <Link onClick={handleMenu}   style = {linkStyleMobile} to="portfolio" smooth={true}  duration={500}>
                               Portfolio
                         </Link>
-                        <Link  className= "link-padding"style = {linkStyleMobile} to="footer" smooth={true}  duration={500}>
+                        <Link onClick={handleMenu}   style = {linkStyleMobile} to="footer" smooth={true}  duration={500}>
                              Contact
                         </Link>
                 </div>
@@ -69,7 +73,7 @@ export default Navigation;
 
 const Header = styled.header`
   background-color: #262b33;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   width: 100vw;
   position:fixed;
   z-index: 999;
@@ -86,10 +90,7 @@ const Header = styled.header`
     display: none;
   }
 
-  .mobile-navItems{
-    display: flex;
-  }
-
+ 
 .mobile-nav {
 
   .display-mobile-nav {
@@ -100,9 +101,9 @@ const Header = styled.header`
     -webkit-box-shadow: 10px 10px 5px 0px rgba(189,189,189,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(189,189,189,0.75);
     transition: opacity 5s ease-in;
-  
 
   }
+}
 
 `;
 
@@ -111,15 +112,13 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 8rem;
+  padding:0 8rem;
   font-family:Arial, Helvetica, sans-serif;
 
 @media (max-width: 1200px){
 
   padding: 1rem 1rem;
 }
-
-
 
 
 a  {
@@ -133,19 +132,7 @@ button {
   border: none;
  }
 
-  ul {
 
-    margin: 20px 0;
-    li {
-      padding: 10px 0;
-      
-      a {
-        color: #ffffff;
-      }
-    }
-  }
-
-}
 
 
 @media (min-width: 800px){
@@ -161,6 +148,11 @@ button {
   
   .mobile-nav {
     display: none;
+
+      .display-mobile-nav {
+        display: none;
+      }
+
   }
 
 }

@@ -91,6 +91,7 @@ ul {
   li {
     font-size: 12px;
     border: 1px solid #703D85;
+    border-radius: 5px;
     margin : 0 5px;
     padding: 2px;
     font-family: Arial, Helvetica, sans-serif;
